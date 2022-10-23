@@ -27,6 +27,10 @@
 		2F9132FF2904F52900C45B4A /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F02904F52900C45B4A /* LemonMeringuePie.usdz */; };
 		2F9133002904F52900C45B4A /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F12904F52900C45B4A /* wateringcan.usdz */; };
 		2F9133012904F52900C45B4A /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F22904F52900C45B4A /* chair_swan.usdz */; };
+		2F9133032904FD8C00C45B4A /* ControlButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */; };
+		2F9133052905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */; };
+		2F9133072905010500C45B4A /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133062905010500C45B4A /* ControlView.swift */; };
+		2F9133092905016900C45B4A /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133082905016900C45B4A /* CustomButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		2F9132F02904F52900C45B4A /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LemonMeringuePie.usdz; sourceTree = "<group>"; };
 		2F9132F12904F52900C45B4A /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
 		2F9132F22904F52900C45B4A /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBarView.swift; sourceTree = "<group>"; };
+		2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBarVisibilityToggleView.swift; sourceTree = "<group>"; };
+		2F9133062905010500C45B4A /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		2F9133082905016900C45B4A /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 			children = (
 				2F9132D22904F31A00C45B4A /* ARGalleryApp.swift */,
 				2F9132D42904F31A00C45B4A /* ContentView.swift */,
+				2F9133062905010500C45B4A /* ControlView.swift */,
+				2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */,
+				2F9133082905016900C45B4A /* CustomButtonView.swift */,
+				2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */,
 				2F9132E02904F32900C45B4A /* ARViewContainer.swift */,
 				2F9132E32904F38C00C45B4A /* Resources */,
 				2F9132D82904F31A00C45B4A /* Preview Content */,
@@ -216,8 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9133092905016900C45B4A /* CustomButtonView.swift in Sources */,
 				2F9132D52904F31A00C45B4A /* ContentView.swift in Sources */,
+				2F9133032904FD8C00C45B4A /* ControlButtonBarView.swift in Sources */,
 				2F9132D32904F31A00C45B4A /* ARGalleryApp.swift in Sources */,
+				2F9133052905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift in Sources */,
+				2F9133072905010500C45B4A /* ControlView.swift in Sources */,
 				2F9132E12904F32900C45B4A /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +366,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for Augmented Reality to function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -379,6 +396,7 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to your camera for Augmented Reality to function";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
