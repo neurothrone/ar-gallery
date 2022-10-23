@@ -11,6 +11,22 @@
 		2F9132D52904F31A00C45B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9132D42904F31A00C45B4A /* ContentView.swift */; };
 		2F9132D72904F31A00C45B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132D62904F31A00C45B4A /* Assets.xcassets */; };
 		2F9132DA2904F31A00C45B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132D92904F31A00C45B4A /* Preview Assets.xcassets */; };
+		2F9132E12904F32900C45B4A /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9132E02904F32900C45B4A /* ARViewContainer.swift */; };
+		2F9132F32904F52900C45B4A /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E42904F52900C45B4A /* cup_saucer_set.usdz */; };
+		2F9132F42904F52900C45B4A /* PegasusTrail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E52904F52900C45B4A /* PegasusTrail.usdz */; };
+		2F9132F52904F52900C45B4A /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E62904F52900C45B4A /* toy_biplane.usdz */; };
+		2F9132F62904F52900C45B4A /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E72904F52900C45B4A /* toy_drummer.usdz */; };
+		2F9132F72904F52900C45B4A /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E82904F52900C45B4A /* tv_retro.usdz */; };
+		2F9132F82904F52900C45B4A /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132E92904F52900C45B4A /* toy_robot_vintage.usdz */; };
+		2F9132F92904F52900C45B4A /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132EA2904F52900C45B4A /* gramophone.usdz */; };
+		2F9132FA2904F52900C45B4A /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132EB2904F52900C45B4A /* toy_car.usdz */; };
+		2F9132FB2904F52900C45B4A /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132EC2904F52900C45B4A /* flower_tulip.usdz */; };
+		2F9132FC2904F52900C45B4A /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132ED2904F52900C45B4A /* teapot.usdz */; };
+		2F9132FD2904F52900C45B4A /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132EE2904F52900C45B4A /* fender_stratocaster.usdz */; };
+		2F9132FE2904F52900C45B4A /* AirForce.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132EF2904F52900C45B4A /* AirForce.usdz */; };
+		2F9132FF2904F52900C45B4A /* LemonMeringuePie.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F02904F52900C45B4A /* LemonMeringuePie.usdz */; };
+		2F9133002904F52900C45B4A /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F12904F52900C45B4A /* wateringcan.usdz */; };
+		2F9133012904F52900C45B4A /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2F9132F22904F52900C45B4A /* chair_swan.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +35,22 @@
 		2F9132D42904F31A00C45B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F9132D62904F31A00C45B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F9132D92904F31A00C45B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F9132E02904F32900C45B4A /* ARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		2F9132E42904F52900C45B4A /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		2F9132E52904F52900C45B4A /* PegasusTrail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PegasusTrail.usdz; sourceTree = "<group>"; };
+		2F9132E62904F52900C45B4A /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		2F9132E72904F52900C45B4A /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		2F9132E82904F52900C45B4A /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
+		2F9132E92904F52900C45B4A /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		2F9132EA2904F52900C45B4A /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		2F9132EB2904F52900C45B4A /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		2F9132EC2904F52900C45B4A /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		2F9132ED2904F52900C45B4A /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		2F9132EE2904F52900C45B4A /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		2F9132EF2904F52900C45B4A /* AirForce.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AirForce.usdz; sourceTree = "<group>"; };
+		2F9132F02904F52900C45B4A /* LemonMeringuePie.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LemonMeringuePie.usdz; sourceTree = "<group>"; };
+		2F9132F12904F52900C45B4A /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
+		2F9132F22904F52900C45B4A /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +85,8 @@
 			children = (
 				2F9132D22904F31A00C45B4A /* ARGalleryApp.swift */,
 				2F9132D42904F31A00C45B4A /* ContentView.swift */,
-				2F9132D62904F31A00C45B4A /* Assets.xcassets */,
+				2F9132E02904F32900C45B4A /* ARViewContainer.swift */,
+				2F9132E32904F38C00C45B4A /* Resources */,
 				2F9132D82904F31A00C45B4A /* Preview Content */,
 			);
 			path = ARGallery;
@@ -65,6 +98,37 @@
 				2F9132D92904F31A00C45B4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F9132E22904F38300C45B4A /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F9132EF2904F52900C45B4A /* AirForce.usdz */,
+				2F9132F22904F52900C45B4A /* chair_swan.usdz */,
+				2F9132E42904F52900C45B4A /* cup_saucer_set.usdz */,
+				2F9132EE2904F52900C45B4A /* fender_stratocaster.usdz */,
+				2F9132EC2904F52900C45B4A /* flower_tulip.usdz */,
+				2F9132EA2904F52900C45B4A /* gramophone.usdz */,
+				2F9132F02904F52900C45B4A /* LemonMeringuePie.usdz */,
+				2F9132E52904F52900C45B4A /* PegasusTrail.usdz */,
+				2F9132ED2904F52900C45B4A /* teapot.usdz */,
+				2F9132E62904F52900C45B4A /* toy_biplane.usdz */,
+				2F9132EB2904F52900C45B4A /* toy_car.usdz */,
+				2F9132E72904F52900C45B4A /* toy_drummer.usdz */,
+				2F9132E92904F52900C45B4A /* toy_robot_vintage.usdz */,
+				2F9132E82904F52900C45B4A /* tv_retro.usdz */,
+				2F9132F12904F52900C45B4A /* wateringcan.usdz */,
+			);
+			path = "3D Assets";
+			sourceTree = "<group>";
+		};
+		2F9132E32904F38C00C45B4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F9132D62904F31A00C45B4A /* Assets.xcassets */,
+				2F9132E22904F38300C45B4A /* 3D Assets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +189,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9132FC2904F52900C45B4A /* teapot.usdz in Resources */,
+				2F9132FD2904F52900C45B4A /* fender_stratocaster.usdz in Resources */,
+				2F9132F82904F52900C45B4A /* toy_robot_vintage.usdz in Resources */,
+				2F9132FB2904F52900C45B4A /* flower_tulip.usdz in Resources */,
+				2F9132FE2904F52900C45B4A /* AirForce.usdz in Resources */,
+				2F9132F92904F52900C45B4A /* gramophone.usdz in Resources */,
 				2F9132DA2904F31A00C45B4A /* Preview Assets.xcassets in Resources */,
+				2F9133002904F52900C45B4A /* wateringcan.usdz in Resources */,
+				2F9132F52904F52900C45B4A /* toy_biplane.usdz in Resources */,
+				2F9132F42904F52900C45B4A /* PegasusTrail.usdz in Resources */,
+				2F9132F72904F52900C45B4A /* tv_retro.usdz in Resources */,
 				2F9132D72904F31A00C45B4A /* Assets.xcassets in Resources */,
+				2F9132F32904F52900C45B4A /* cup_saucer_set.usdz in Resources */,
+				2F9132F62904F52900C45B4A /* toy_drummer.usdz in Resources */,
+				2F9132FA2904F52900C45B4A /* toy_car.usdz in Resources */,
+				2F9133012904F52900C45B4A /* chair_swan.usdz in Resources */,
+				2F9132FF2904F52900C45B4A /* LemonMeringuePie.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +218,7 @@
 			files = (
 				2F9132D52904F31A00C45B4A /* ContentView.swift in Sources */,
 				2F9132D32904F31A00C45B4A /* ARGalleryApp.swift in Sources */,
+				2F9132E12904F32900C45B4A /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

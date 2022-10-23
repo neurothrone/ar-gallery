@@ -102,3 +102,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 *.xcconfig
+
+# Resources
+ARGallery/Resources/3D Assets/*
