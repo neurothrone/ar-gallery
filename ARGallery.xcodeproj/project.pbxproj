@@ -31,6 +31,25 @@
 		2F9133052905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */; };
 		2F9133072905010500C45B4A /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133062905010500C45B4A /* ControlView.swift */; };
 		2F9133092905016900C45B4A /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133082905016900C45B4A /* CustomButtonView.swift */; };
+		2F91330B2905152100C45B4A /* BrowseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91330A2905152100C45B4A /* BrowseSheet.swift */; };
+		2F91330D29051F6C00C45B4A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91330C29051F6C00C45B4A /* Model.swift */; };
+		2F91330F2905510500C45B4A /* ModelsByCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91330E2905510500C45B4A /* ModelsByCategoryGridView.swift */; };
+		2F9133152905543000C45B4A /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133142905543000C45B4A /* SeparatorView.swift */; };
+		2F9133192905546000C45B4A /* HorizontalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133182905546000C45B4A /* HorizontalGridView.swift */; };
+		2F91331B29062BD400C45B4A /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91331A29062BD400C45B4A /* PlacementSettings.swift */; };
+		2F91331D2906307200C45B4A /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91331C2906307200C45B4A /* PlacementView.swift */; };
+		2F913320290632CA00C45B4A /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 2F91331F290632CA00C45B4A /* FocusEntity */; };
+		2F9133222906332900C45B4A /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133212906332900C45B4A /* CustomARView.swift */; };
+		2F91332429064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91332329064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift */; };
+		2F91332629064EA400C45B4A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91332529064EA400C45B4A /* View+Extensions.swift */; };
+		2F91332C290653B600C45B4A /* PlacementButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91332B290653B600C45B4A /* PlacementButtonView.swift */; };
+		2F91332E2906541D00C45B4A /* RecentsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91332D2906541D00C45B4A /* RecentsGridView.swift */; };
+		2F9133302906544E00C45B4A /* ModelButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91332F2906544E00C45B4A /* ModelButtonView.swift */; };
+		2F9133322906549000C45B4A /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133312906549000C45B4A /* SessionSettings.swift */; };
+		2F9133352906552100C45B4A /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9133342906552100C45B4A /* SettingsSheet.swift */; };
+		2F913337290655C400C45B4A /* SettingToggleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F913336290655C400C45B4A /* SettingToggleButtonView.swift */; };
+		2F91333929065AC100C45B4A /* SettingsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91333829065AC100C45B4A /* SettingsGridView.swift */; };
+		2F91333D29065B9300C45B4A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91333C29065B9300C45B4A /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +78,24 @@
 		2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBarVisibilityToggleView.swift; sourceTree = "<group>"; };
 		2F9133062905010500C45B4A /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		2F9133082905016900C45B4A /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		2F91330A2905152100C45B4A /* BrowseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSheet.swift; sourceTree = "<group>"; };
+		2F91330C29051F6C00C45B4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2F91330E2905510500C45B4A /* ModelsByCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsByCategoryGridView.swift; sourceTree = "<group>"; };
+		2F9133142905543000C45B4A /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		2F9133182905546000C45B4A /* HorizontalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGridView.swift; sourceTree = "<group>"; };
+		2F91331A29062BD400C45B4A /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		2F91331C2906307200C45B4A /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		2F9133212906332900C45B4A /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		2F91332329064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentlyPlacedButtonView.swift; sourceTree = "<group>"; };
+		2F91332529064EA400C45B4A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		2F91332B290653B600C45B4A /* PlacementButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonView.swift; sourceTree = "<group>"; };
+		2F91332D2906541D00C45B4A /* RecentsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsGridView.swift; sourceTree = "<group>"; };
+		2F91332F2906544E00C45B4A /* ModelButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelButtonView.swift; sourceTree = "<group>"; };
+		2F9133312906549000C45B4A /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		2F9133342906552100C45B4A /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		2F913336290655C400C45B4A /* SettingToggleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleButtonView.swift; sourceTree = "<group>"; };
+		2F91333829065AC100C45B4A /* SettingsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGridView.swift; sourceTree = "<group>"; };
+		2F91333C29065B9300C45B4A /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F913320290632CA00C45B4A /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +131,11 @@
 			children = (
 				2F9132D22904F31A00C45B4A /* ARGalleryApp.swift */,
 				2F9132D42904F31A00C45B4A /* ContentView.swift */,
-				2F9133062905010500C45B4A /* ControlView.swift */,
-				2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */,
-				2F9133082905016900C45B4A /* CustomButtonView.swift */,
-				2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */,
-				2F9132E02904F32900C45B4A /* ARViewContainer.swift */,
+				2F9133272906537700C45B4A /* Extensions */,
+				2F9133132905529D00C45B4A /* AR */,
+				2F9133102905527A00C45B4A /* Data */,
+				2F9133172905544300C45B4A /* Settings */,
+				2F9133112905527D00C45B4A /* UI */,
 				2F9132E32904F38C00C45B4A /* Resources */,
 				2F9132D82904F31A00C45B4A /* Preview Content */,
 			);
@@ -143,6 +181,112 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2F9133102905527A00C45B4A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2F91330C29051F6C00C45B4A /* Model.swift */,
+				2F91331A29062BD400C45B4A /* PlacementSettings.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2F9133112905527D00C45B4A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F9133282906538800C45B4A /* Control */,
+				2F9133292906539900C45B4A /* Browse */,
+				2F91332A290653A200C45B4A /* Placement */,
+				2F9133162905543400C45B4A /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F9133132905529D00C45B4A /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				2F9132E02904F32900C45B4A /* ARViewContainer.swift */,
+				2F9133212906332900C45B4A /* CustomARView.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		2F9133162905543400C45B4A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F9133082905016900C45B4A /* CustomButtonView.swift */,
+				2F91332F2906544E00C45B4A /* ModelButtonView.swift */,
+				2F9133142905543000C45B4A /* SeparatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F9133172905544300C45B4A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2F91333B29065B8000C45B4A /* Data */,
+				2F91333A29065B7E00C45B4A /* UI */,
+				2F9133342906552100C45B4A /* SettingsSheet.swift */,
+				2F913336290655C400C45B4A /* SettingToggleButtonView.swift */,
+				2F91333829065AC100C45B4A /* SettingsGridView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2F9133272906537700C45B4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F91332529064EA400C45B4A /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F9133282906538800C45B4A /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				2F9133062905010500C45B4A /* ControlView.swift */,
+				2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */,
+				2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */,
+				2F91332329064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		2F9133292906539900C45B4A /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				2F91330A2905152100C45B4A /* BrowseSheet.swift */,
+				2F91330E2905510500C45B4A /* ModelsByCategoryGridView.swift */,
+				2F9133182905546000C45B4A /* HorizontalGridView.swift */,
+				2F91332D2906541D00C45B4A /* RecentsGridView.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		2F91332A290653A200C45B4A /* Placement */ = {
+			isa = PBXGroup;
+			children = (
+				2F91331C2906307200C45B4A /* PlacementView.swift */,
+				2F91332B290653B600C45B4A /* PlacementButtonView.swift */,
+			);
+			path = Placement;
+			sourceTree = "<group>";
+		};
+		2F91333A29065B7E00C45B4A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F91333B29065B8000C45B4A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2F9133312906549000C45B4A /* SessionSettings.swift */,
+				2F91333C29065B9300C45B4A /* Setting.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +303,9 @@
 			dependencies = (
 			);
 			name = ARGallery;
+			packageProductDependencies = (
+				2F91331F290632CA00C45B4A /* FocusEntity */,
+			);
 			productName = ARGallery;
 			productReference = 2F9132CF2904F31900C45B4A /* ARGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +334,9 @@
 				Base,
 			);
 			mainGroup = 2F9132C62904F31900C45B4A;
+			packageReferences = (
+				2F91331E290632CA00C45B4A /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 2F9132D02904F31900C45B4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -228,13 +378,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F91332C290653B600C45B4A /* PlacementButtonView.swift in Sources */,
+				2F9133152905543000C45B4A /* SeparatorView.swift in Sources */,
+				2F91330D29051F6C00C45B4A /* Model.swift in Sources */,
+				2F91330F2905510500C45B4A /* ModelsByCategoryGridView.swift in Sources */,
 				2F9133092905016900C45B4A /* CustomButtonView.swift in Sources */,
+				2F91333D29065B9300C45B4A /* Setting.swift in Sources */,
 				2F9132D52904F31A00C45B4A /* ContentView.swift in Sources */,
+				2F9133352906552100C45B4A /* SettingsSheet.swift in Sources */,
 				2F9133032904FD8C00C45B4A /* ControlButtonBarView.swift in Sources */,
+				2F91331D2906307200C45B4A /* PlacementView.swift in Sources */,
+				2F91332629064EA400C45B4A /* View+Extensions.swift in Sources */,
+				2F913337290655C400C45B4A /* SettingToggleButtonView.swift in Sources */,
 				2F9132D32904F31A00C45B4A /* ARGalleryApp.swift in Sources */,
 				2F9133052905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift in Sources */,
+				2F91331B29062BD400C45B4A /* PlacementSettings.swift in Sources */,
+				2F9133302906544E00C45B4A /* ModelButtonView.swift in Sources */,
+				2F9133222906332900C45B4A /* CustomARView.swift in Sources */,
+				2F9133322906549000C45B4A /* SessionSettings.swift in Sources */,
 				2F9133072905010500C45B4A /* ControlView.swift in Sources */,
 				2F9132E12904F32900C45B4A /* ARViewContainer.swift in Sources */,
+				2F91333929065AC100C45B4A /* SettingsGridView.swift in Sources */,
+				2F91332E2906541D00C45B4A /* RecentsGridView.swift in Sources */,
+				2F9133192905546000C45B4A /* HorizontalGridView.swift in Sources */,
+				2F91332429064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift in Sources */,
+				2F91330B2905152100C45B4A /* BrowseSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F91331E290632CA00C45B4A /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F91331F290632CA00C45B4A /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F91331E290632CA00C45B4A /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F9132C72904F31900C45B4A /* Project object */;
 }

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct ARGalleryApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var placementSettings: PlacementSettings = .init()
+  @StateObject var sessionSettings: SessionSettings = .init()
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(placementSettings)
+        .environmentObject(sessionSettings)
     }
+  }
 }

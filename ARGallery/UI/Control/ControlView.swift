@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ControlView: View {
   @Binding var isControlsVisible: Bool
+  @Binding var isBrowseViewPresented: Bool
+  @Binding var isSettingsSheetPresented: Bool
   
   var body: some View {
     VStack {
@@ -16,7 +18,10 @@ struct ControlView: View {
       Spacer()
       
       if isControlsVisible {
-        ControlButtonBarView()
+        ControlButtonBarView(
+          isBrowseViewPresented: $isBrowseViewPresented,
+          isSettingsSheetPresented: $isSettingsSheetPresented
+        )
       }
     }
   }
@@ -24,6 +29,10 @@ struct ControlView: View {
 
 struct ControlView_Previews: PreviewProvider {
   static var previews: some View {
-    ControlView(isControlsVisible: .constant(true))
+    ControlView(
+      isControlsVisible: .constant(true),
+      isBrowseViewPresented: .constant(false),
+      isSettingsSheetPresented: .constant(false)
+    )
   }
 }
