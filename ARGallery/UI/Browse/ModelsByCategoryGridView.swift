@@ -10,22 +10,23 @@ import SwiftUI
 struct ModelsByCategoryGridView: View {
   @Binding var isBrowseSheetPresented: Bool
   
-  let models: [Model] = Model.all
+  @ObservedObject private var modelManager: ModelManager = .init()
   
   var body: some View {
     VStack {
       ForEach(ModelCategory.allCases) { category in
-        let modelsInCategory = Model.allBy(category: category)
+        let modelsInCategory = modelManager.models.filter { $0.category == category }
         
         if !modelsInCategory.isEmpty {
           HorizontalGridView(
             isBrowseSheetPresented: $isBrowseSheetPresented,
-            title: category.rawValue,
+            title: category.title,
             items: modelsInCategory
           )
         }
       }
     }
+    .onAppear(perform: modelManager.fetchData)
   }
 }
 

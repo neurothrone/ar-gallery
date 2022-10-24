@@ -23,8 +23,8 @@ struct ModelButtonView: View {
   }
 }
 
-struct ModelButtonView_Previews: PreviewProvider {
-  static var previews: some View {
-    ModelButtonView(model: Model.all.first!, action: {})
-  }
-}
+//struct ModelButtonView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ModelButtonView(model: Model.all.first!, action: {})
+//  }
+//}

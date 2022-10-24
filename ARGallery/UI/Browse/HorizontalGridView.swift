@@ -28,7 +28,7 @@ struct HorizontalGridView: View {
       
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHGrid(rows: gridLayout, spacing: 30) {
-          ForEach(items, id: \.name) { model in
+          ForEach(items) { model in
             ModelButtonView(model: model) {
               model.asyncLoadModelEntity()
               placementSettings.selectedModel = model
@@ -43,13 +43,13 @@ struct HorizontalGridView: View {
   }
 }
 
-struct HorizontalGridView_Previews: PreviewProvider {
-  static var previews: some View {
-    HorizontalGridView(
-      isBrowseSheetPresented: .constant(true),
-      title: "Misc",
-      items: Model.allBy(category: .misc)
-    )
-    .environmentObject(PlacementSettings())
-  }
-}
+//struct HorizontalGridView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    HorizontalGridView(
+//      isBrowseSheetPresented: .constant(true),
+//      title: "Misc",
+//      items: Model.allBy(category: .misc)
+//    )
+//    .environmentObject(PlacementSettings())
+//  }
+//}

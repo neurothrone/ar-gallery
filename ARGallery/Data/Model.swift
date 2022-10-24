@@ -10,18 +10,35 @@ import RealityKit
 import SwiftUI
 
 enum ModelCategory: String {
-  case clothing = "Clothing"
-  case furniture = "Furniture"
-  case kitchenware = "Kitchenware"
-  case toys = "Toys"
-  case misc = "Misc"
+  case clothing
+  case furniture
+  case kitchenware
+  case toys
+  case misc
+  
+  var title: String {
+    switch self {
+    case .clothing:
+      return "Clothng"
+    case .furniture:
+      return "Furniture"
+    case .kitchenware:
+      return "Kitchenware"
+    case .toys:
+      return "Toys"
+    case .misc:
+      return "Misc"
+    }
+  }
 }
 
 extension ModelCategory: Identifiable, CaseIterable {
   var id: Self { self }
 }
 
-final class Model {
+final class Model: Identifiable {
+  var id: String = UUID().uuidString
+  
   var name: String
   var category: ModelCategory
   var thumbnail: UIImage
@@ -59,29 +76,5 @@ final class Model {
         print("modelEntity for \(self.name) has been loaded.")
       }
 
-  }
-}
-
-extension Model {
-  static var all: [Model] = {
-    var models: [Model] = []
-    
-    let airForce = Model(name: "AirForce", category: .clothing)
-    models += [airForce]
-    
-    let chairSwan = Model(name: "chair_swan", category: .furniture)
-    models += [chairSwan]
-    
-    let cupSaucerSet = Model(name: "cup_saucer_set", category: .kitchenware)
-    models += [cupSaucerSet]
-    
-    let fenderStratocast = Model(name: "fender_stratocaster", category: .misc)
-    models += [fenderStratocast]
-    
-    return models
-  }()
-  
-  static func allBy(category: ModelCategory) -> [Model] {
-    all.filter { $0.category == category }
   }
 }
