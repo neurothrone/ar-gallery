@@ -9,39 +9,13 @@ import Combine
 import RealityKit
 import SwiftUI
 
-enum ModelCategory: String {
-  case clothing
-  case furniture
-  case kitchenware
-  case toys
-  case misc
+final class Model: ObservableObject, Identifiable {
+  @Published var thumbnail: UIImage
   
-  var title: String {
-    switch self {
-    case .clothing:
-      return "Clothng"
-    case .furniture:
-      return "Furniture"
-    case .kitchenware:
-      return "Kitchenware"
-    case .toys:
-      return "Toys"
-    case .misc:
-      return "Misc"
-    }
-  }
-}
-
-extension ModelCategory: Identifiable, CaseIterable {
-  var id: Self { self }
-}
-
-final class Model: Identifiable {
   var id: String = UUID().uuidString
   
   var name: String
   var category: ModelCategory
-  var thumbnail: UIImage
   var modelEntity: ModelEntity?
   var scaleCompensation: Float
   
@@ -54,27 +28,35 @@ final class Model: Identifiable {
   ) {
     self.name = name
     self.category = category
-    self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
+    self.thumbnail = UIImage(systemName: "photo")!
     self.scaleCompensation = scaleCompensation
+    
+    FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "thumbnails/\(name).png") { localURL in
+      do {
+        let imageData = try Data(contentsOf: localURL)
+        self.thumbnail = UIImage(data: imageData) ?? self.thumbnail
+      } catch {
+        print("❌ -> Failed to load thumbnail from firebase. Error: \(error)")
+      }
+    }
   }
   
   func asyncLoadModelEntity() {
-    let fileName = name + ".usdz"
-    
-    cancellable = ModelEntity.loadModelAsync(named: fileName)
-      .sink { loadCompletion in
-        switch loadCompletion {
-        case .failure(let error):
-          print("❌ -> Failed to load modelEntity for \(fileName). Error: \(error)")
-        case .finished:
-          break
+    FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "models/\(name).usdz") { localURL in
+      self.cancellable = ModelEntity.loadModelAsync(contentsOf: localURL)
+        .sink { loadCompletion in
+          switch loadCompletion {
+          case .failure(let error):
+            print("❌ -> Failed to load modelEntity for \(self.name) from Firebase. Error: \(error)")
+          case .finished:
+            break
+          }
+        } receiveValue: { modelEntity in
+          self.modelEntity = modelEntity
+          self.modelEntity?.scale *= self.scaleCompensation
+          
+          print("modelEntity for \(self.name) has been loaded.")
         }
-      } receiveValue: { modelEntity in
-        self.modelEntity = modelEntity
-        self.modelEntity?.scale *= self.scaleCompensation
-        
-        print("modelEntity for \(self.name) has been loaded.")
-      }
-
+    }
   }
 }

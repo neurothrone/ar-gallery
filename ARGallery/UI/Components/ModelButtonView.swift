@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ModelButtonView: View {
-  let model: Model
+  @ObservedObject var model: Model
+  
   let action: () -> Void
   
   var body: some View {
