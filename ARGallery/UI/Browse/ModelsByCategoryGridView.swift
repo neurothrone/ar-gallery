@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ModelsByCategoryGridView: View {
-  @Binding var isBrowseSheetPresented: Bool
+  @EnvironmentObject private var modelManager: ModelManager
   
-  @ObservedObject private var modelManager: ModelManager = .init()
+  @Binding var isBrowseSheetPresented: Bool
   
   var body: some View {
     VStack {
@@ -26,12 +26,12 @@ struct ModelsByCategoryGridView: View {
         }
       }
     }
-    .onAppear(perform: modelManager.fetchData)
   }
 }
 
 struct ModelsByCategoryGridView_Previews: PreviewProvider {
   static var previews: some View {
     ModelsByCategoryGridView(isBrowseSheetPresented: .constant(true))
+      .environmentObject(ModelManager())
   }
 }

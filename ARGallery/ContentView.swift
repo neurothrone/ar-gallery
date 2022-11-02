@@ -9,15 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
   @EnvironmentObject var placementSettings: PlacementSettings
+  @EnvironmentObject var modelManager: ModelManager
+  @EnvironmentObject var modelDeletionManager: ModelDeletionManager
   
   @State private var isControlsVisible = true
   @State private var isBrowseViewPresented = false
   @State private var isSettingsSheetPresented = false
   
+  @State private var selectedControlMode: ControlMode = .browse
+  
   var body: some View {
     content
       .sheet(isPresented: $isBrowseViewPresented) {
         BrowseSheet(isBrowseSheetPresented: $isBrowseViewPresented)
+          .environmentObject(placementSettings)
       }
       .sheet(isPresented: $isSettingsSheetPresented) {
         SettingsSheet(isSettingsSheetPresented: $isSettingsSheetPresented)
@@ -28,18 +33,21 @@ struct ContentView: View {
     ZStack(alignment: .bottom) {
       ARViewContainer()
       
-      if placementSettings.selectedModel == nil {
+      if placementSettings.selectedModel != nil {
+        PlacementView()
+      } else if modelDeletionManager.selectedEntityToDelete != nil {
+        DeletionView()
+      } else {
         ControlView(
           isControlsVisible: $isControlsVisible,
           isBrowseViewPresented: $isBrowseViewPresented,
-          isSettingsSheetPresented: $isSettingsSheetPresented
+          isSettingsSheetPresented: $isSettingsSheetPresented, selectedControlMode: $selectedControlMode
         )
         .padding(.bottom)
-      } else {
-        PlacementView()
       }
     }
     .edgesIgnoringSafeArea(.all)
+    .onAppear(perform: modelManager.fetchData)
   }
 }
 
@@ -48,5 +56,8 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
       .environmentObject(PlacementSettings())
       .environmentObject(SessionSettings())
+      .environmentObject(SceneManager())
+      .environmentObject(ModelManager())
+      .environmentObject(ModelDeletionManager())
   }
 }

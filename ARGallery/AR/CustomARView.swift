@@ -15,6 +15,18 @@ import SwiftUI
 final class CustomARView: ARView {
   var focusEntity: FocusEntity?
   var sessionSettings: SessionSettings
+  var modelDeletionManager: ModelDeletionManager
+  
+  var defaultConfiguration: ARWorldTrackingConfiguration {
+    let config = ARWorldTrackingConfiguration()
+    config.planeDetection = [.horizontal, .vertical]
+    
+    if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
+      config.sceneReconstruction = .mesh
+    }
+    
+    return config
+  }
   
   private var peopleOcclusionCancellable: AnyCancellable?
   private var objectOcclusionCancellable: AnyCancellable?
@@ -23,8 +35,13 @@ final class CustomARView: ARView {
   
   private var cancellables: Set<AnyCancellable> = []
   
-  required init(frame frameRect: CGRect, sessionSettings: SessionSettings) {
+  required init(
+    frame frameRect: CGRect,
+    sessionSettings: SessionSettings,
+    modelDeletionManager: ModelDeletionManager
+  ) {
     self.sessionSettings = sessionSettings
+    self.modelDeletionManager = modelDeletionManager
     
     super.init(frame: frameRect)
     
@@ -33,6 +50,8 @@ final class CustomARView: ARView {
     configure()
     initializeSettings()
     setUpSubscribers()
+    
+    enableObjectDeletion()
   }
   
   required init(frame frameRect: CGRect) {
@@ -44,14 +63,7 @@ final class CustomARView: ARView {
   }
   
   private func configure() {
-    let config = ARWorldTrackingConfiguration()
-    config.planeDetection = [.horizontal, .vertical]
-    
-    if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-      config.sceneReconstruction = .mesh
-    }
-    
-    session.run(config)
+    session.run(defaultConfiguration)
     
     addCoachingOverlay()
   }
@@ -73,26 +85,6 @@ final class CustomARView: ARView {
   }
   
   private func setUpSubscribers() {
-//    peopleOcclusionCancellable = sessionSettings.$isPeopleOcclusionEnabled
-//      .sink { [weak self] isEnabled in
-//        self?.updatePeopleOcclusion(isEnabled: isEnabled)
-//      }
-    
-//    objectOcclusionCancellable = sessionSettings.$isObjectOcclusionEnabled
-//      .sink { [weak self] isEnabled in
-//        self?.updateObjectOcclusion(isEnabled: isEnabled)
-//      }
-    
-//    lidarDebugCancellable = sessionSettings.$isLidarDebugEnabled
-//      .sink { [weak self] isEnabled in
-//        self?.updateLidarDebug(isEnabled: isEnabled)
-//      }
-    
-//    multiuserCancellable = sessionSettings.$isMultiuserEnabled
-//      .sink { [weak self] isEnabled in
-//        self?.updateMultiuser(isEnabled: isEnabled)
-//      }
-    
     sessionSettings.$isPeopleOcclusionEnabled
       .sink { [weak self] isEnabled in
         self?.updatePeopleOcclusion(isEnabled: isEnabled)
@@ -158,6 +150,21 @@ final class CustomARView: ARView {
   
   private func updateMultiuser(isEnabled: Bool) {
     print("\(#file): isMultiuserEnabled is now \(isEnabled)")
+  }
+}
+
+extension CustomARView {
+  func enableObjectDeletion() {
+    let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(recognizer:)))
+    addGestureRecognizer(longPressGesture)
+  }
+  
+  @objc func handleLongPress(recognizer: UILongPressGestureRecognizer) {
+    let pressLocation = recognizer.location(in: self)
+    
+    if let entity = self.entity(at: pressLocation) as? ModelEntity {
+      modelDeletionManager.selectedEntityToDelete = entity
+    }
   }
 }
 

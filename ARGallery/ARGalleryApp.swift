@@ -12,6 +12,9 @@ import SwiftUI
 struct ARGalleryApp: App {
   @StateObject var placementSettings: PlacementSettings = .init()
   @StateObject var sessionSettings: SessionSettings = .init()
+  @StateObject var sceneManager: SceneManager = .init()
+  @StateObject var modelManager: ModelManager = .init()
+  @StateObject var modelDeletionManager: ModelDeletionManager = .init()
   
   init() {
     FirebaseApp.configure()
@@ -32,6 +35,9 @@ struct ARGalleryApp: App {
       ContentView()
         .environmentObject(placementSettings)
         .environmentObject(sessionSettings)
+        .environmentObject(sceneManager)
+        .environmentObject(modelManager)
+        .environmentObject(modelDeletionManager)
     }
   }
 }

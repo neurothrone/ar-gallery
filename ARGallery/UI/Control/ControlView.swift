@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+enum ControlMode: String, Identifiable, CaseIterable {
+  case browse, scene
+  
+  var id: Self { self }
+}
+
 struct ControlView: View {
   @Binding var isControlsVisible: Bool
   @Binding var isBrowseViewPresented: Bool
   @Binding var isSettingsSheetPresented: Bool
+  @Binding var selectedControlMode: ControlMode
   
   var body: some View {
     VStack {
@@ -18,9 +25,11 @@ struct ControlView: View {
       Spacer()
       
       if isControlsVisible {
+        ControlModePickerView(selectedControlMode: $selectedControlMode)
         ControlButtonBarView(
           isBrowseViewPresented: $isBrowseViewPresented,
-          isSettingsSheetPresented: $isSettingsSheetPresented
+          isSettingsSheetPresented: $isSettingsSheetPresented,
+          selectedControlMode: $selectedControlMode
         )
       }
     }
@@ -32,7 +41,8 @@ struct ControlView_Previews: PreviewProvider {
     ControlView(
       isControlsVisible: .constant(true),
       isBrowseViewPresented: .constant(false),
-      isSettingsSheetPresented: .constant(false)
+      isSettingsSheetPresented: .constant(false),
+      selectedControlMode: .constant(.browse)
     )
   }
 }

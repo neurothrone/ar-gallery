@@ -41,19 +41,24 @@ final class Model: ObservableObject, Identifiable {
     }
   }
   
-  func asyncLoadModelEntity() {
+  func asyncLoadModelEntity(
+    handler: @escaping (_ completed: Bool, _ error: Error?) -> Void
+  ) {
     FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "models/\(name).usdz") { localURL in
       self.cancellable = ModelEntity.loadModelAsync(contentsOf: localURL)
         .sink { loadCompletion in
           switch loadCompletion {
           case .failure(let error):
             print("❌ -> Failed to load modelEntity for \(self.name) from Firebase. Error: \(error)")
+            handler(false, error)
           case .finished:
             break
           }
         } receiveValue: { modelEntity in
           self.modelEntity = modelEntity
           self.modelEntity?.scale *= self.scaleCompensation
+          
+          handler(true, nil)
           
           print("modelEntity for \(self.name) has been loaded.")
         }

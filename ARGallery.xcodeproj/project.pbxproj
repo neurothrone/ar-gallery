@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5843B52911908D00A9F76F /* ControlModePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843B42911908D00A9F76F /* ControlModePickerView.swift */; };
+		2F5843B72911AA0D00A9F76F /* ScenePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843B62911AA0D00A9F76F /* ScenePersistenceHelper.swift */; };
+		2F5843B92911E50500A9F76F /* ModelDeletionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843B82911E50500A9F76F /* ModelDeletionManager.swift */; };
+		2F5843BB2911E90C00A9F76F /* DeletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843BA2911E90C00A9F76F /* DeletionView.swift */; };
 		2F7D606B29066A90003A22EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7D606A29066A90003A22EF /* FirebaseAuth */; };
 		2F7D606D29066A90003A22EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7D606C29066A90003A22EF /* FirebaseFirestore */; };
 		2F7D606F29066A90003A22EF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7D606E29066A90003A22EF /* FirebaseFirestoreSwift */; };
@@ -46,6 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F5843B42911908D00A9F76F /* ControlModePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlModePickerView.swift; sourceTree = "<group>"; };
+		2F5843B62911AA0D00A9F76F /* ScenePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersistenceHelper.swift; sourceTree = "<group>"; };
+		2F5843B82911E50500A9F76F /* ModelDeletionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDeletionManager.swift; sourceTree = "<group>"; };
+		2F5843BA2911E90C00A9F76F /* DeletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionView.swift; sourceTree = "<group>"; };
 		2F7D607229066BFC003A22EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F7D607429066DD4003A22EF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		2F7D60FB2907D7BA003A22EF /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 				2F9132D22904F31A00C45B4A /* ARGalleryApp.swift */,
 				2F9132D42904F31A00C45B4A /* ContentView.swift */,
 				2F7D60FB2907D7BA003A22EF /* FirebaseStorageHelper.swift */,
+				2F5843B62911AA0D00A9F76F /* ScenePersistenceHelper.swift */,
 				2F9132D62904F31A00C45B4A /* Assets.xcassets */,
 				2F7D607229066BFC003A22EF /* GoogleService-Info.plist */,
 				2F9133272906537700C45B4A /* Extensions */,
@@ -145,6 +154,7 @@
 				2F7D60FD2907D917003A22EF /* ModelCategory.swift */,
 				2F7D607429066DD4003A22EF /* ModelManager.swift */,
 				2F91331A29062BD400C45B4A /* PlacementSettings.swift */,
+				2F5843B82911E50500A9F76F /* ModelDeletionManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 				2F9133292906539900C45B4A /* Browse */,
 				2F91332A290653A200C45B4A /* Placement */,
 				2F9133162905543400C45B4A /* Components */,
+				2F5843BA2911E90C00A9F76F /* DeletionView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9133062905010500C45B4A /* ControlView.swift */,
+				2F5843B42911908D00A9F76F /* ControlModePickerView.swift */,
 				2F9133022904FD8C00C45B4A /* ControlButtonBarView.swift */,
 				2F9133042905005900C45B4A /* ControlButtonBarVisibilityToggleView.swift */,
 				2F91332329064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift */,
@@ -334,6 +346,7 @@
 				2F91330F2905510500C45B4A /* ModelsByCategoryGridView.swift in Sources */,
 				2F9133092905016900C45B4A /* CustomButtonView.swift in Sources */,
 				2F91333D29065B9300C45B4A /* Setting.swift in Sources */,
+				2F5843B72911AA0D00A9F76F /* ScenePersistenceHelper.swift in Sources */,
 				2F9132D52904F31A00C45B4A /* ContentView.swift in Sources */,
 				2F9133352906552100C45B4A /* SettingsSheet.swift in Sources */,
 				2F9133032904FD8C00C45B4A /* ControlButtonBarView.swift in Sources */,
@@ -353,6 +366,9 @@
 				2F7D607529066DD4003A22EF /* ModelManager.swift in Sources */,
 				2F7D60FC2907D7BA003A22EF /* FirebaseStorageHelper.swift in Sources */,
 				2F91332E2906541D00C45B4A /* RecentsGridView.swift in Sources */,
+				2F5843B52911908D00A9F76F /* ControlModePickerView.swift in Sources */,
+				2F5843B92911E50500A9F76F /* ModelDeletionManager.swift in Sources */,
+				2F5843BB2911E90C00A9F76F /* DeletionView.swift in Sources */,
 				2F9133192905546000C45B4A /* HorizontalGridView.swift in Sources */,
 				2F91332429064DCA00C45B4A /* MostRecentlyPlacedButtonView.swift in Sources */,
 				2F91330B2905152100C45B4A /* BrowseSheet.swift in Sources */,

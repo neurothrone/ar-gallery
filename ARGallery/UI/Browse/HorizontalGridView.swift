@@ -30,8 +30,11 @@ struct HorizontalGridView: View {
         LazyHGrid(rows: gridLayout, spacing: 30) {
           ForEach(items) { model in
             ModelButtonView(model: model) {
-              model.asyncLoadModelEntity()
-              placementSettings.selectedModel = model
+              model.asyncLoadModelEntity { completed, error in
+                if completed {
+                  placementSettings.selectedModel = model                  
+                }
+              }
               isBrowseSheetPresented = false
             }
           }

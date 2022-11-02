@@ -32,4 +32,10 @@ final class ModelManager: ObservableObject {
       }
     }
   }
+  
+  func clearModelEntitiesFromMemory() {
+    for model in models {
+      model.modelEntity = nil
+    }
+  }
 }

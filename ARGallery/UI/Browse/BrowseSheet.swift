@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BrowseSheet: View {
+struct BrowseSheet: View {  
   @Binding var isBrowseSheetPresented: Bool
   
   var body: some View {
